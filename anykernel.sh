@@ -4,8 +4,8 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Vortex Permissive Kernel by 1ndev
-do.devicecheck=1
+kernel.string=CG65 Exfat/Permissive Kernel by 1ndev
+do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=1
@@ -26,7 +26,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 } # end attributes
 
 # boot shell variables
-block=auto;
+block=boot;
 is_slot_device=auto;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
